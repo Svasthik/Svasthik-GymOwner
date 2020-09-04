@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "136043452596",
+    "firebase_url": "https://gymapp-a8af9.firebaseio.com",
+    "project_id": "gymapp-a8af9",
+    "storage_bucket": "gymapp-a8af9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136043452596:android:ec04294851ff9891e01fe1",
+        "android_client_info": {
+          "package_name": "com.example.gym_register"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136043452596-m8s4lv9qt7jkfe85e44ks2683lauepf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXdHZk6ECPClANQR6VzrHkvkjCPrEPnrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136043452596-m8s4lv9qt7jkfe85e44ks2683lauepf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136043452596:android:609dad299d256695e01fe1",
+        "android_client_info": {
+          "package_name": "com.example.gymapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136043452596-dkqe2mkl56ubvitohdj6uusjce098r2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymapp",
+            "certificate_hash": "c21e6087a70c03ca1a0bc4dc0d6c881a194bc5a8"
+          }
+        },
+        {
+          "client_id": "136043452596-m8s4lv9qt7jkfe85e44ks2683lauepf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXdHZk6ECPClANQR6VzrHkvkjCPrEPnrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136043452596-m8s4lv9qt7jkfe85e44ks2683lauepf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136043452596:android:3c5cc229b8e29be1e01fe1",
+        "android_client_info": {
+          "package_name": "com.example.svasthik_gymowner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136043452596-m8s4lv9qt7jkfe85e44ks2683lauepf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXdHZk6ECPClANQR6VzrHkvkjCPrEPnrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136043452596-m8s4lv9qt7jkfe85e44ks2683lauepf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

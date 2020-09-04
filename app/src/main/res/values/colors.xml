@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CEDB00</color>
+    <color name="colorPrimaryDark">#38382D</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Darkest">#000</color>
+    <color name="purestStrain">#FFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorLogoBackground">#313030</color>
+    <color name="colorLogoMain">#CDDA00</color>
+    <color name="colorRatingBox">#2def17</color>
+</resources>
