@@ -1,12 +1,9 @@
 package com.example.svasthik_gymowner;
 
-public class BookingDetailsCLass {
-    String address,customerId,customerName,email,price,slot,targetGym,targetGymId,phone,otp,image,slotValue,date;
+public class HistoryModelClass {
+    String address,customerId,customerName,email,price,slot,targetGym,targetGymId,image,date;
 
-    public BookingDetailsCLass() {
-    }
-
-    public BookingDetailsCLass(String address, String customerId, String customerName, String email, String price, String slot, String targetGym, String targetGymId, String phone, String otp, String image,String slotValue,String date) {
+    public HistoryModelClass(String address, String customerId, String customerName, String email, String price, String slot, String targetGym, String targetGymId,String image,String date) {
         this.address = address;
         this.customerId = customerId;
         this.customerName = customerName;
@@ -15,10 +12,7 @@ public class BookingDetailsCLass {
         this.slot = slot;
         this.targetGym = targetGym;
         this.targetGymId = targetGymId;
-        this.phone = phone;
-        this.otp = otp;
-        this.image = image;
-        this.slotValue=slotValue;
+        this.image=image;
         this.date=date;
     }
 
@@ -30,12 +24,12 @@ public class BookingDetailsCLass {
         this.date = date;
     }
 
-    public String getSlotValue() {
-        return slotValue;
+    public String getImage() {
+        return image;
     }
 
-    public void setSlotValue(String slotValue) {
-        this.slotValue = slotValue;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getAddress() {
@@ -100,29 +94,5 @@ public class BookingDetailsCLass {
 
     public void setTargetGymId(String targetGymId) {
         this.targetGymId = targetGymId;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getOtp() {
-        return otp;
-    }
-
-    public void setOtp(String otp) {
-        this.otp = otp;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
 }

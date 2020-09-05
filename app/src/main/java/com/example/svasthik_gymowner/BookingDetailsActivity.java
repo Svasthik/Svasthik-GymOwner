@@ -26,6 +26,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Transaction;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 public class BookingDetailsActivity extends AppCompatActivity {
@@ -33,6 +35,8 @@ public class BookingDetailsActivity extends AppCompatActivity {
     TextView phone;
     TextView email;
     TextView time;
+    TextView dayTextView;
+    TextView dateTextView;
     EditText otp;
     Button startSession;
 
@@ -52,6 +56,8 @@ public class BookingDetailsActivity extends AppCompatActivity {
         phone=(TextView)findViewById(R.id.profile_phone);
         email=(TextView)findViewById(R.id.profile_email);
         time=(TextView)findViewById(R.id.profile_time);
+        dayTextView=(TextView)findViewById(R.id.profile_day);
+        dateTextView=(TextView)findViewById(R.id.profile_date);
         otp=(EditText) findViewById(R.id.otp);
         startSession=(Button)findViewById(R.id.start_session);
         final String name_string=getIntent().getStringExtra("name");
@@ -76,6 +82,16 @@ public class BookingDetailsActivity extends AppCompatActivity {
         email.setText(email_string);
         phone.setText(phone_string);
         time.setText(time_string);
+
+
+        Date date = new Date();
+        date.getTime();
+        SimpleDateFormat ft = new SimpleDateFormat("EEE");
+        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
+        String day=ft.format(date);
+        String date_String=dt.format(date);
+        dayTextView.setText(day);
+        dateTextView.setText(date_String);
 
         startSession.setOnClickListener(new View.OnClickListener() {
             @Override

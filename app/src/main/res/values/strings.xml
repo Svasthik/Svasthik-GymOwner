@@ -12,5 +12,7 @@
     <string name="end_session">End Session</string>
     <string name="booking">Bookings</string>
     <string name="active_session">Active Session</string>
+    <string name="history">History</string>
+
 
 </resources>

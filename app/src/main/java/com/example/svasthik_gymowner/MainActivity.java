@@ -103,8 +103,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             selectedFragment = new ActiveSessionFragment();
                             break;
                         case R.id.nav_history:
-                            return false;
-                           // break;
+                            selectedFragment= new HistoryFragment();
+                            break;
 
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

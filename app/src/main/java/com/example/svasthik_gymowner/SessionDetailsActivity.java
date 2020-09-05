@@ -33,6 +33,7 @@ public class SessionDetailsActivity extends AppCompatActivity {
     TextView phone;
     TextView email;
     TextView time;
+    TextView dateTextView;
     EditText otp;
     Button endSession;
 
@@ -51,6 +52,7 @@ public class SessionDetailsActivity extends AppCompatActivity {
         phone=(TextView)findViewById(R.id.profile_phone);
         email=(TextView)findViewById(R.id.profile_email);
         time=(TextView)findViewById(R.id.profile_time);
+        dateTextView=(TextView)findViewById(R.id.profile_date);
         otp=(EditText) findViewById(R.id.otp);
         endSession=(Button)findViewById(R.id.end_session);
         final String name_string=getIntent().getStringExtra("name");
@@ -85,7 +87,12 @@ public class SessionDetailsActivity extends AppCompatActivity {
                 String currentTime=ft.format(date);
                 int currentTimeInt=timeInInt(currentTime);
                 int valueTimeInt=timeInInt(slotValue_string);
-                Log.i("time",String.valueOf(currentTimeInt-valueTimeInt));
+
+
+                SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
+                String date_string=dt.format(date);
+                dateTextView.setText(date_string);
+
                 final String requestID=historyRef.push().getKey();
                 final HashMap<String , Object> map = new HashMap<>();
                 map.put("customerName" , name_string);
@@ -98,6 +105,7 @@ public class SessionDetailsActivity extends AppCompatActivity {
                 map.put("slot", time_string);
                 map.put("image", image_string);
                 map.put("email", email_string);
+                map.put("date", date_string);
                 map.put("slotValue", slotValue_string);
                 if(currentTimeInt-valueTimeInt!=0){
                     gymRef.child("bookingHistory").child(requestID).setValue(true).addOnCompleteListener(new OnCompleteListener<Void>() {
