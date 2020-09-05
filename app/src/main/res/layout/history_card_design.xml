@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="395dp"
+    android:layout_width="340dp"
     android:layout_height="wrap_content"
     android:background="@color/purestStrain"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="20dp"
     app:cardElevation="4dp"
     android:layout_marginBottom="20dp"
-    android:layout_marginHorizontal="10dp"
+    android:layout_gravity="center_horizontal"
 
 
     >
@@ -22,7 +22,7 @@
             app:cardCornerRadius="15dp">
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="130dp"
+                android:layout_height="150dp"
                 android:id="@+id/image_history"
 
                 android:src="@drawable/ic_person"
@@ -42,7 +42,7 @@
                 android:paddingTop="1dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:text="Deepjyoti Kalita"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_gravity="center_vertical">
 
             </TextView>
@@ -56,7 +56,7 @@
 
             </TextView>
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/id"
 
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/id"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="60dp"
 
                 style="@style/Widget.AppCompat.RatingBar.Indicator"
                 android:rating="4"></RatingBar>
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="180dp"
+                android:layout_marginLeft="140dp"
                >
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/price"
                         android:text="500"
-                        android:textSize="18dp">
+                        android:textSize="15dp">
 
                     </TextView>
 
@@ -103,7 +103,7 @@
                     android:id="@id/time"
                     android:layout_alignParentRight="true"
 
-                    android:textSize="18dp"
+                    android:textSize="15dp"
                     ></TextView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -112,8 +112,8 @@
 
                     android:id="@+id/date"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="15dp"
-                    android:textSize="18dp"
+
+                    android:textSize="15dp"
                     ></TextView>
             </LinearLayout>
 

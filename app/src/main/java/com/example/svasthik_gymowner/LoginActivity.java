@@ -1,5 +1,6 @@
 package com.example.svasthik_gymowner;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         buLogin = (Button) findViewById(R.id.buLogin);
         etEmail = (EditText) findViewById(R.id.etForgotEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
-        tvForgotPassword = (TextView) findViewById(R.id.tvForgotPassword);
+
 
 
 
@@ -70,9 +72,16 @@ public class LoginActivity extends AppCompatActivity {
 
 //progressDialog dismiss
                 progressDialog.dismiss();
-                //Toast.makeText(SigninActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                 //checkEmailVerificarion();
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
                 finish();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                progressDialog.dismiss();
+                Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
