@@ -181,6 +181,7 @@
                 android:id="@+id/end_session"
                 android:paddingHorizontal="20dp"
                 android:textSize="15dp"
+                android:layout_marginBottom="30dp"
                 android:textColor="@color/purestStrain"
                 android:paddingVertical="5dp"
                 android:background="@drawable/button_style_start_session"

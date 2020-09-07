@@ -38,7 +38,9 @@ public class HomeFragment extends Fragment implements BookingListAdapter.OnItemC
         gymsRef.child("bookingRequest").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                itemlist.clear();
                 for( DataSnapshot snap:snapshot.getChildren()) {
+                    
                     //Log.i("value", String.valueOf(snapshot.getValue()));
                     BookingDetailsCLass info = snap.getValue(BookingDetailsCLass.class);
                     String name = info.getCustomerName();

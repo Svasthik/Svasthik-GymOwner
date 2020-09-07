@@ -177,6 +177,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter OTP"
                 android:id="@+id/otp"
+                android:maxLength="6"
                 android:layout_marginTop="25dp"
                 android:paddingHorizontal="70dp"
                 android:paddingVertical="20dp"
